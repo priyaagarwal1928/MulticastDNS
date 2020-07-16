@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D64555E724C087FA00C83318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64555E624C087FA00C83318 /* Assets.xcassets */; };
+		D64555EA24C087FA00C83318 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D64555E924C087FA00C83318 /* Preview Assets.xcassets */; };
+		D64555ED24C087FA00C83318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D64555EB24C087FA00C83318 /* LaunchScreen.storyboard */; };
+		D64555F824C087FB00C83318 /* MultiCastDNSServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64555F724C087FB00C83318 /* MultiCastDNSServicesTests.swift */; };
+		D645560324C087FB00C83318 /* MultiCastDNSServicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645560224C087FB00C83318 /* MultiCastDNSServicesUITests.swift */; };
+		D645562324C0881900C83318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D645561024C0881800C83318 /* Main.storyboard */; };
+		D645562424C0881900C83318 /* JoinPresenenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645561224C0881800C83318 /* JoinPresenenter.swift */; };
+		D645562524C0881900C83318 /* JoiningTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645561324C0881800C83318 /* JoiningTableViewCell.swift */; };
+		D645562624C0881900C83318 /* JoinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645561424C0881800C83318 /* JoinService.swift */; };
+		D645562724C0881900C83318 /* HostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645561624C0881800C83318 /* HostPresenter.swift */; };
+		D645562824C0881900C83318 /* HostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645561724C0881800C83318 /* HostService.swift */; };
+		D645562924C0881900C83318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645561924C0881900C83318 /* AppDelegate.swift */; };
+		D645562A24C0881900C83318 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645561A24C0881900C83318 /* ContentView.swift */; };
+		D645562B24C0881900C83318 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645561B24C0881900C83318 /* SceneDelegate.swift */; };
+		D645562C24C0881900C83318 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645561D24C0881900C83318 /* HomeVC.swift */; };
+		D645562D24C0881900C83318 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = D645561F24C0881900C83318 /* GCDAsyncSocket.m */; };
+		D645562E24C0881900C83318 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D645562224C0881900C83318 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D64555F424C087FB00C83318 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D64555D524C087F500C83318 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D64555DC24C087F500C83318;
+			remoteInfo = MultiCastDNSServices;
+		};
+		D64555FF24C087FB00C83318 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D64555D524C087F500C83318 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D64555DC24C087F500C83318;
+			remoteInfo = MultiCastDNSServices;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D64555DD24C087F500C83318 /* MultiCastDNSServices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiCastDNSServices.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64555E624C087FA00C83318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D64555E924C087FA00C83318 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D64555EC24C087FA00C83318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D64555EE24C087FA00C83318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D64555F324C087FB00C83318 /* MultiCastDNSServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiCastDNSServicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D64555F724C087FB00C83318 /* MultiCastDNSServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCastDNSServicesTests.swift; sourceTree = "<group>"; };
+		D64555F924C087FB00C83318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D64555FE24C087FB00C83318 /* MultiCastDNSServicesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiCastDNSServicesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D645560224C087FB00C83318 /* MultiCastDNSServicesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCastDNSServicesUITests.swift; sourceTree = "<group>"; };
+		D645560424C087FB00C83318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D645561024C0881800C83318 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D645561224C0881800C83318 /* JoinPresenenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinPresenenter.swift; sourceTree = "<group>"; };
+		D645561324C0881800C83318 /* JoiningTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoiningTableViewCell.swift; sourceTree = "<group>"; };
+		D645561424C0881800C83318 /* JoinService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinService.swift; sourceTree = "<group>"; };
+		D645561624C0881800C83318 /* HostPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostPresenter.swift; sourceTree = "<group>"; };
+		D645561724C0881800C83318 /* HostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostService.swift; sourceTree = "<group>"; };
+		D645561924C0881900C83318 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D645561A24C0881900C83318 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D645561B24C0881900C83318 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D645561D24C0881900C83318 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		D645561F24C0881900C83318 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		D645562024C0881900C83318 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		D645562224C0881900C83318 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D645562F24C0881E00C83318 /* MultiCastDNSServices-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultiCastDNSServices-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D64555DA24C087F500C83318 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64555F024C087FB00C83318 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64555FB24C087FB00C83318 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D64555D424C087F500C83318 = {
+			isa = PBXGroup;
+			children = (
+				D645562F24C0881E00C83318 /* MultiCastDNSServices-Bridging-Header.h */,
+				D64555DF24C087F500C83318 /* MultiCastDNSServices */,
+				D64555F624C087FB00C83318 /* MultiCastDNSServicesTests */,
+				D645560124C087FB00C83318 /* MultiCastDNSServicesUITests */,
+				D64555DE24C087F500C83318 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D64555DE24C087F500C83318 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D64555DD24C087F500C83318 /* MultiCastDNSServices.app */,
+				D64555F324C087FB00C83318 /* MultiCastDNSServicesTests.xctest */,
+				D64555FE24C087FB00C83318 /* MultiCastDNSServicesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D64555DF24C087F500C83318 /* MultiCastDNSServices */ = {
+			isa = PBXGroup;
+			children = (
+				D645561824C0881800C83318 /* SceneDelegate */,
+				D645561E24C0881900C83318 /* GCDAsyncSocket */,
+				D645562124C0881900C83318 /* Utilities */,
+				D645563124C0892200C83318 /* Controller */,
+				D645563024C0890C00C83318 /* View */,
+				D64555E624C087FA00C83318 /* Assets.xcassets */,
+				D64555EE24C087FA00C83318 /* Info.plist */,
+				D64555E824C087FA00C83318 /* Preview Content */,
+			);
+			path = MultiCastDNSServices;
+			sourceTree = "<group>";
+		};
+		D64555E824C087FA00C83318 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D64555E924C087FA00C83318 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D64555F624C087FB00C83318 /* MultiCastDNSServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				D64555F724C087FB00C83318 /* MultiCastDNSServicesTests.swift */,
+				D64555F924C087FB00C83318 /* Info.plist */,
+			);
+			path = MultiCastDNSServicesTests;
+			sourceTree = "<group>";
+		};
+		D645560124C087FB00C83318 /* MultiCastDNSServicesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D645560224C087FB00C83318 /* MultiCastDNSServicesUITests.swift */,
+				D645560424C087FB00C83318 /* Info.plist */,
+			);
+			path = MultiCastDNSServicesUITests;
+			sourceTree = "<group>";
+		};
+		D645561124C0881800C83318 /* Join */ = {
+			isa = PBXGroup;
+			children = (
+				D645561224C0881800C83318 /* JoinPresenenter.swift */,
+				D645561324C0881800C83318 /* JoiningTableViewCell.swift */,
+				D645561424C0881800C83318 /* JoinService.swift */,
+			);
+			path = Join;
+			sourceTree = "<group>";
+		};
+		D645561524C0881800C83318 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				D645561624C0881800C83318 /* HostPresenter.swift */,
+				D645561724C0881800C83318 /* HostService.swift */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		D645561824C0881800C83318 /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				D645561924C0881900C83318 /* AppDelegate.swift */,
+				D645561A24C0881900C83318 /* ContentView.swift */,
+				D645561B24C0881900C83318 /* SceneDelegate.swift */,
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		D645561C24C0881900C83318 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D645561D24C0881900C83318 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D645561E24C0881900C83318 /* GCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				D645561F24C0881900C83318 /* GCDAsyncSocket.m */,
+				D645562024C0881900C83318 /* GCDAsyncSocket.h */,
+			);
+			path = GCDAsyncSocket;
+			sourceTree = "<group>";
+		};
+		D645562124C0881900C83318 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D645562224C0881900C83318 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D645563024C0890C00C83318 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D645561024C0881800C83318 /* Main.storyboard */,
+				D64555EB24C087FA00C83318 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D645563124C0892200C83318 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D645561C24C0881900C83318 /* Home */,
+				D645561524C0881800C83318 /* Host */,
+				D645561124C0881800C83318 /* Join */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D64555DC24C087F500C83318 /* MultiCastDNSServices */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D645560724C087FB00C83318 /* Build configuration list for PBXNativeTarget "MultiCastDNSServices" */;
+			buildPhases = (
+				D64555D924C087F500C83318 /* Sources */,
+				D64555DA24C087F500C83318 /* Frameworks */,
+				D64555DB24C087F500C83318 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiCastDNSServices;
+			productName = MultiCastDNSServices;
+			productReference = D64555DD24C087F500C83318 /* MultiCastDNSServices.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D64555F224C087FB00C83318 /* MultiCastDNSServicesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D645560A24C087FB00C83318 /* Build configuration list for PBXNativeTarget "MultiCastDNSServicesTests" */;
+			buildPhases = (
+				D64555EF24C087FB00C83318 /* Sources */,
+				D64555F024C087FB00C83318 /* Frameworks */,
+				D64555F124C087FB00C83318 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D64555F524C087FB00C83318 /* PBXTargetDependency */,
+			);
+			name = MultiCastDNSServicesTests;
+			productName = MultiCastDNSServicesTests;
+			productReference = D64555F324C087FB00C83318 /* MultiCastDNSServicesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D64555FD24C087FB00C83318 /* MultiCastDNSServicesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D645560D24C087FB00C83318 /* Build configuration list for PBXNativeTarget "MultiCastDNSServicesUITests" */;
+			buildPhases = (
+				D64555FA24C087FB00C83318 /* Sources */,
+				D64555FB24C087FB00C83318 /* Frameworks */,
+				D64555FC24C087FB00C83318 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D645560024C087FB00C83318 /* PBXTargetDependency */,
+			);
+			name = MultiCastDNSServicesUITests;
+			productName = MultiCastDNSServicesUITests;
+			productReference = D64555FE24C087FB00C83318 /* MultiCastDNSServicesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D64555D524C087F500C83318 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "priya agarwal";
+				TargetAttributes = {
+					D64555DC24C087F500C83318 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					D64555F224C087FB00C83318 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = D64555DC24C087F500C83318;
+					};
+					D64555FD24C087FB00C83318 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = D64555DC24C087F500C83318;
+					};
+				};
+			};
+			buildConfigurationList = D64555D824C087F500C83318 /* Build configuration list for PBXProject "MultiCastDNSServices" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D64555D424C087F500C83318;
+			productRefGroup = D64555DE24C087F500C83318 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D64555DC24C087F500C83318 /* MultiCastDNSServices */,
+				D64555F224C087FB00C83318 /* MultiCastDNSServicesTests */,
+				D64555FD24C087FB00C83318 /* MultiCastDNSServicesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D64555DB24C087F500C83318 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64555ED24C087FA00C83318 /* LaunchScreen.storyboard in Resources */,
+				D64555EA24C087FA00C83318 /* Preview Assets.xcassets in Resources */,
+				D64555E724C087FA00C83318 /* Assets.xcassets in Resources */,
+				D645562324C0881900C83318 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64555F124C087FB00C83318 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64555FC24C087FB00C83318 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D64555D924C087F500C83318 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D645562924C0881900C83318 /* AppDelegate.swift in Sources */,
+				D645562E24C0881900C83318 /* Constants.swift in Sources */,
+				D645562824C0881900C83318 /* HostService.swift in Sources */,
+				D645562A24C0881900C83318 /* ContentView.swift in Sources */,
+				D645562C24C0881900C83318 /* HomeVC.swift in Sources */,
+				D645562724C0881900C83318 /* HostPresenter.swift in Sources */,
+				D645562524C0881900C83318 /* JoiningTableViewCell.swift in Sources */,
+				D645562D24C0881900C83318 /* GCDAsyncSocket.m in Sources */,
+				D645562624C0881900C83318 /* JoinService.swift in Sources */,
+				D645562424C0881900C83318 /* JoinPresenenter.swift in Sources */,
+				D645562B24C0881900C83318 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64555EF24C087FB00C83318 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D64555F824C087FB00C83318 /* MultiCastDNSServicesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D64555FA24C087FB00C83318 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D645560324C087FB00C83318 /* MultiCastDNSServicesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D64555F524C087FB00C83318 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D64555DC24C087F500C83318 /* MultiCastDNSServices */;
+			targetProxy = D64555F424C087FB00C83318 /* PBXContainerItemProxy */;
+		};
+		D645560024C087FB00C83318 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D64555DC24C087F500C83318 /* MultiCastDNSServices */;
+			targetProxy = D64555FF24C087FB00C83318 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D64555EB24C087FA00C83318 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D64555EC24C087FA00C83318 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D645560524C087FB00C83318 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D645560624C087FB00C83318 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D645560824C087FB00C83318 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"MultiCastDNSServices/Preview Content\"";
+				DEVELOPMENT_TEAM = 4CQTEWGST8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MultiCastDNSServices/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoppini.YallaShip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = YallashipDevProvWithPush;
+				SWIFT_OBJC_BRIDGING_HEADER = "MultiCastDNSServices-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D645560924C087FB00C83318 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_ASSET_PATHS = "\"MultiCastDNSServices/Preview Content\"";
+				DEVELOPMENT_TEAM = 4CQTEWGST8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MultiCastDNSServices/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoppini.YallaShip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = YallashipDevProvWithPush;
+				SWIFT_OBJC_BRIDGING_HEADER = "MultiCastDNSServices-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D645560B24C087FB00C83318 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MultiCastDNSServicesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shopini.MultiCastSearch.MultiCastDNSServicesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiCastDNSServices.app/MultiCastDNSServices";
+			};
+			name = Debug;
+		};
+		D645560C24C087FB00C83318 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MultiCastDNSServicesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shopini.MultiCastSearch.MultiCastDNSServicesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiCastDNSServices.app/MultiCastDNSServices";
+			};
+			name = Release;
+		};
+		D645560E24C087FB00C83318 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MultiCastDNSServicesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shopini.MultiCastSearch.MultiCastDNSServicesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MultiCastDNSServices;
+			};
+			name = Debug;
+		};
+		D645560F24C087FB00C83318 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MultiCastDNSServicesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shopini.MultiCastSearch.MultiCastDNSServicesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MultiCastDNSServices;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D64555D824C087F500C83318 /* Build configuration list for PBXProject "MultiCastDNSServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D645560524C087FB00C83318 /* Debug */,
+				D645560624C087FB00C83318 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D645560724C087FB00C83318 /* Build configuration list for PBXNativeTarget "MultiCastDNSServices" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D645560824C087FB00C83318 /* Debug */,
+				D645560924C087FB00C83318 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D645560A24C087FB00C83318 /* Build configuration list for PBXNativeTarget "MultiCastDNSServicesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D645560B24C087FB00C83318 /* Debug */,
+				D645560C24C087FB00C83318 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D645560D24C087FB00C83318 /* Build configuration list for PBXNativeTarget "MultiCastDNSServicesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D645560E24C087FB00C83318 /* Debug */,
+				D645560F24C087FB00C83318 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D64555D524C087F500C83318 /* Project object */;
+}
